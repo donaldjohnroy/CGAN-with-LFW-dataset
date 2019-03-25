@@ -13,7 +13,9 @@ mb_size = 64
 Z_dim = 100
 X_dim = mnist.train.images.shape[1]
 y_dim = mnist.train.labels.shape[1]
-h_dim = 128
+print("DIMENSIONOF X: ", str(X_dim))
+print("DIMENSIONOF X: ", str(y_dim))
+h_dim = 250
 
 
 def xavier_init(size):
@@ -23,7 +25,7 @@ def xavier_init(size):
 
 
 """ Discriminator Net model """
-X = tf.placeholder(tf.float32, shape=[None, 625000])
+X = tf.placeholder(tf.float32, shape=[None, 62500])
 y = tf.placeholder(tf.float32, shape=[None, y_dim])
 
 D_W1 = tf.Variable(xavier_init([X_dim + y_dim, h_dim]))

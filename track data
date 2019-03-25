@@ -3,3 +3,11 @@
 
 use numpy 1.15
 convert dataset to mnist format para naay basis ang network sa dimensions
+
+
+march 25 2019:
+all data succesfully accepted by the network, converted formats from data set.
+after 5k iterrations model was not able to produce a better image than the last
+image it produced. Generator loss function got stucked; possible overfitting.
+See out folder for generated images.
+

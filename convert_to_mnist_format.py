@@ -59,7 +59,7 @@ import random
 height = 250
 width = 250
 
-dstPath = "convert_MNIST"
+dstPath = "../MNIST_all"
 testLabelPath = dstPath+"/t10k-labels-idx1-ubyte"
 testImagePath = dstPath+"/t10k-images-idx3-ubyte"
 trainLabelPath = dstPath+"/train-labels-idx1-ubyte"
