@@ -59,7 +59,7 @@ import random
 height = 250
 width = 250
 
-dstPath = "../MNIST_data"
+dstPath = "convert_MNIST"
 testLabelPath = dstPath+"/t10k-labels-idx1-ubyte"
 testImagePath = dstPath+"/t10k-images-idx3-ubyte"
 trainLabelPath = dstPath+"/train-labels-idx1-ubyte"
@@ -214,6 +214,7 @@ def main(argv):
     if argv[2] == 'train':
         print('this is the training data', str(trainImagedata))
         write_labeldata(trainLabeldata, trainLabelPath)
+        print("this is the image path", str(trainImagePath))
         write_imagedata(trainImagedata, trainImagePath)
     elif argv[2] == 'test':
         print('this is the test data: ', str(testImagedata))
